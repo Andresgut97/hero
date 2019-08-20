@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin','AdminController@index');
+Route::get('/admin/hero','heroController@index');
+Route::get('/admin/enemies','enemiesController@index');
+Route::get('/admin/items',' itemsController@index');
